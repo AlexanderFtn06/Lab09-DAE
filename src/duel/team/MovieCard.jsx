@@ -5,7 +5,7 @@
 
 export default function MovieCard({ movie }) {
   return (
-    <article>
+    <article className="movie-card">
       <img src={movie.image} alt={movie.title} />
 
       <h3>{movie.title}</h3>

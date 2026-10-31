@@ -5,7 +5,7 @@
 
 export default function AgentMessage({ author, text }) {
   return (
-    <p>
+    <p className="agent-message">
       <strong>{author}:</strong>{" "}
       <span>{text}</span>
     </p>

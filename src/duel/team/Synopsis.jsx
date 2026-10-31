@@ -4,6 +4,6 @@
 
 export default function Synopsis({ text }) {
   return (
-    <p>{text}</p>
+    <p className="synopsis">{text}</p>
   );
 }
