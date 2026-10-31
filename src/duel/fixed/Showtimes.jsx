@@ -1,17 +1,13 @@
 export default function Showtimes({ times }) {
-  if (!times) {
+  if (times.length === 0) {
     return <p>Sin funciones hoy</p>;
   }
 
   return (
-    <div className="showtimes">
-      {times.length && (
-        <ul>
-          {times.map((time) => (
-            <li key={time}>{time}</li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <ul className="showtimes">
+      {times.map((time) => (
+        <li key={time}>{time}</li>
+      ))}
+    </ul>
   );
 }
